@@ -1,6 +1,0 @@
-@webstore.api_HostAddress = http://localhost:5075
-
-GET {{webstore.api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
