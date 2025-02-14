@@ -6,8 +6,7 @@ namespace webstore.api.Model
     {
         public ServerResponse() 
         {
-            this.IsSucess = true;
-            this.ErrorMessages = new();
+            ErrorMessages = new();
         }
         public bool IsSucess { get; set; }
         public HttpStatusCode StatusCode { get; set; }
