@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using webstore.api.Data;
 
 namespace webstore.api.Controller
 {
@@ -6,6 +7,10 @@ namespace webstore.api.Controller
     [Route("api/[controller]/[Action]")]
     public class StoreController : ControllerBase
     {
-
+        protected readonly AppDbContext dbContext;
+        public StoreController(AppDbContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
     }
 }
